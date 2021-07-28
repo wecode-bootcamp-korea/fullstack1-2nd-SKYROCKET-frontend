@@ -1,10 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import Slider from './components/Slider';
+import ProjectList from './components/ProjectList';
 
 function Main() {
-  return <Text>메인 페이지입니다!</Text>;
+  return (
+    <MainContainer>
+      <Slider />
+      <ProjectList />
+    </MainContainer>
+  );
 }
 
-const Text = styled.p``;
+const MainContainer = styled.div``;
 
 export default Main;
