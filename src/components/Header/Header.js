@@ -1,10 +1,15 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import styled from 'styled-components';
 
-function Header() {
+const exclusionRoutes = ['/login', '/signup'];
+
+function Header({ location: { pathname } }) {
+  if (exclusionRoutes.includes(pathname)) return null;
+
   return <Text>~ Header 영역 ~</Text>;
 }
 
 const Text = styled.p``;
 
-export default Header;
+export default withRouter(Header);
