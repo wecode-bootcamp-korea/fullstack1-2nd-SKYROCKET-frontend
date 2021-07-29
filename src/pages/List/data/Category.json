@@ -1,0 +1,191 @@
+{
+  "Categories": [
+    {
+      "id": 1,
+      "title": "게임",
+      "elements": [
+        { "id": 1, "sub_title": "모바일게임" },
+        { "id": 2, "sub_title": "보드게임" },
+        { "id": 3, "sub_title": "비디오 게임" },
+        { "id": 4, "sub_title": "카드 게임" },
+        { "id": 5, "sub_title": "게임 페스티벌" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "공연",
+      "elements": [
+        { "id": 6, "sub_title": "무용" },
+        { "id": 7, "sub_title": "뮤지컬" },
+        { "id": 8, "sub_title": "연극" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "디자인",
+      "elements": [
+        { "id": 9, "sub_title": "건축 공간" },
+        { "id": 10, "sub_title": "그래픽 디자인" },
+        { "id": 11, "sub_title": "제품 디자인" },
+        { "id": 12, "sub_title": "타이포그래피" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "만화",
+      "elements": [
+        { "id": 13, "sub_title": "그래픽 노블" },
+        { "id": 14, "sub_title": "웹툰" },
+        { "id": 15, "sub_title": "만화책" },
+        { "id": 16, "sub_title": "만화 웹툰 리소스" }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "예술",
+      "elements": [
+        { "id": 17, "sub_title": "공공예술" },
+        { "id": 18, "sub_title": "조소 피규어" },
+        { "id": 19, "sub_title": "디지털 아트" },
+        { "id": 20, "sub_title": "전시" },
+        { "id": 21, "sub_title": "일러스트레이션" },
+        { "id": 22, "sub_title": "행위예술" },
+        { "id": 23, "sub_title": "혼합매체" },
+        { "id": 24, "sub_title": "회화" },
+        { "id": 25, "sub_title": "예술 페스티벌" }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "공예",
+      "elements": [
+        { "id": 26, "sub_title": "캔들" },
+        { "id": 27, "sub_title": "조향" },
+        { "id": 28, "sub_title": "비누" },
+        { "id": 29, "sub_title": "도예" },
+        { "id": 30, "sub_title": "섬유 자수" },
+        { "id": 31, "sub_title": "목공예" },
+        { "id": 32, "sub_title": "금속 공예" },
+        { "id": 33, "sub_title": "가죽 공예" },
+        { "id": 34, "sub_title": "문구 캘린더" }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "사진",
+      "elements": [
+        { "id": 35, "sub_title": "인물 사진" },
+        { "id": 36, "sub_title": "공간 장소사진" },
+        { "id": 37, "sub_title": "자연사진" },
+        { "id": 38, "sub_title": "동물사진" }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "영화 비디오",
+      "elements": [
+        { "id": 39, "sub_title": "극영화" },
+        { "id": 40, "sub_title": "다큐멘터리" },
+        { "id": 41, "sub_title": "뮤직비디오" },
+        { "id": 42, "sub_title": "단편영화" },
+        { "id": 43, "sub_title": "애니메이션" },
+        { "id": 44, "sub_title": "웹드라마" },
+        { "id": 45, "sub_title": "영화제" }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "푸드",
+      "elements": [
+        { "id": 46, "sub_title": "베이킹" },
+        { "id": 47, "sub_title": "음료" },
+        { "id": 48, "sub_title": "간편식" },
+        { "id": 49, "sub_title": "요리책" },
+        { "id": 50, "sub_title": "펫 푸드" },
+        { "id": 51, "sub_title": "푸드 페스티벌" }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "음악",
+      "elements": [
+        { "id": 52, "sub_title": "전자음악" },
+        { "id": 53, "sub_title": "어쿠스틱" },
+        { "id": 54, "sub_title": "록" },
+        { "id": 55, "sub_title": "힙합" },
+        { "id": 56, "sub_title": "재즈 음악" },
+        { "id": 57, "sub_title": "팝 음악" },
+        { "id": 58, "sub_title": "발라드" },
+        { "id": 59, "sub_title": "트로트" },
+        { "id": 60, "sub_title": "연주곡" },
+        { "id": 61, "sub_title": "음악 공연" }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "의류",
+      "elements": [
+        { "id": 62, "sub_title": "잡화" },
+        { "id": 63, "sub_title": "주얼리" },
+        { "id": 64, "sub_title": "액세서리" },
+        { "id": 65, "sub_title": "아동복" },
+        { "id": 66, "sub_title": "펫 스타일" },
+        { "id": 67, "sub_title": "뷰티" },
+        { "id": 68, "sub_title": "구제" }
+      ]
+    }
+  ],
+
+  "Status": [
+    {
+      "id": 1,
+      "title": "진행중인 프로젝트"
+    },
+    {
+      "id": 2,
+      "title": "성사된 프로젝트"
+    },
+    {
+      "id": 3,
+      "title": "공개예정 프로젝트"
+    }
+  ],
+
+  "achievePercent": [
+    {
+      "id": 1,
+      "title": "75% 이하"
+    },
+    {
+      "id": 2,
+      "title": "75% ~ 100%"
+    },
+    {
+      "id": 3,
+      "title": "100%이상"
+    }
+  ],
+
+  "achievePrice": [
+    {
+      "id": 1,
+      "title": "1백만원 이하"
+    },
+    {
+      "id": 2,
+      "title": "1백만원 ~ 1천만원"
+    },
+    {
+      "id": 3,
+      "title": "1천만원 ~ 5천만원"
+    },
+    {
+      "id": 4,
+      "title": "5천만원 ~ 1억원"
+    },
+    {
+      "id": 5,
+      "title": "1억원 이상"
+    }
+  ]
+}
