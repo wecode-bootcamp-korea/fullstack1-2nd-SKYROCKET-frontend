@@ -1,15 +1,13 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import styled from 'styled-components';
+import FooterContentWrap from './components/FooterContentWrap';
 
 const exclusionRoutes = ['/login', '/signup'];
 
 function Footer({ location: { pathname } }) {
   if (exclusionRoutes.includes(pathname)) return null;
 
-  return <Text>~ Footer 영역 ~</Text>;
+  return <FooterContentWrap />;
 }
-
-const Text = styled.p``;
 
 export default withRouter(Footer);
