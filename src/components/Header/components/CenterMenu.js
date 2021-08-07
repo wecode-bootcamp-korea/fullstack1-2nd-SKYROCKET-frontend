@@ -1,31 +1,28 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { flex } from '../../../styles/mixins';
+import styled from 'styled-components';
 import { ReactComponent as Logo } from '../../../assets/LogoSkyrocketWithIcon.svg';
+import { flex } from '../../../styles/mixins';
 
-function MemberHeader() {
+function CenterMenu() {
   return (
-    <Header>
+    <CenterMenuBox>
       <StyledLink to="/">
         <LogoSkyrocket />
       </StyledLink>
-    </Header>
+    </CenterMenuBox>
   );
 }
 
-const Header = styled.header`
-  ${flex('center', 'center')}
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 65px;
-  background: ${({ theme }) => theme.colors.white};
-  box-shadow: rgb(10 10 10 / 10%) 0px 1px 2px 0px;
-  z-index: 999;
+const CenterMenuBox = styled.div`
+  ${flex('center', 'center')};
+  flex: 2;
+  height: 100%;
 `;
 
 const StyledLink = styled(Link)`
+  ${flex('center', 'center')};
+  height: 100%;
   transition: opacity 250ms;
 
   &:hover {
@@ -39,4 +36,4 @@ const LogoSkyrocket = styled(Logo)`
   fill: #333;
 `;
 
-export default MemberHeader;
+export default CenterMenu;
