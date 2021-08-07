@@ -17,6 +17,7 @@ const StyledButton = styled.button`
   border-radius: 12px;
   font-size: 16px;
   text-align: center;
+  transition: opacity 250ms;
 
   &:hover {
     opacity: 0.7;
