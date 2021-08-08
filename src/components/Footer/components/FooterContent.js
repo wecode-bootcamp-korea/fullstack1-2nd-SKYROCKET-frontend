@@ -6,40 +6,52 @@ function FooterContent() {
   return (
     <ContentContainer>
       <NoticeWrap>
-        <ContentsTitle>텀블벅</ContentsTitle>
-        <Contents>공지사항</Contents>
-        <Contents>채용</Contents>
-        <Contents>제휴협력</Contents>
+        <tbody>
+          <ContentsTitle>텀블벅</ContentsTitle>
+          <Contents>공지사항</Contents>
+          <Contents>채용</Contents>
+          <Contents>제휴협력</Contents>
+        </tbody>
       </NoticeWrap>
       <ServiceGuideWrap>
-        <ContentsTitle>이용안내</ContentsTitle>
-        <Contents>헬프센터</Contents>
-        <ContentsHighlight>창작자 가이드</ContentsHighlight>
-        <Contents>프로젝트 심사 기준</Contents>
-        <Contents>수수료 정책</Contents>
+        <tbody>
+          <ContentsTitle>이용안내</ContentsTitle>
+          <Contents>헬프센터</Contents>
+          <ContentsHighlight>창작자 가이드</ContentsHighlight>
+          <Contents>프로젝트 심사 기준</Contents>
+          <Contents>수수료 정책</Contents>
+        </tbody>
       </ServiceGuideWrap>
       <PolicyWrap>
-        <ContentsTitle>정책</ContentsTitle>
-        <Contents>이용약관</Contents>
-        <ContentsRedHighlight>개인정보 처리방침</ContentsRedHighlight>
+        <tbody>
+          <ContentsTitle>정책</ContentsTitle>
+          <Contents>이용약관</Contents>
+          <ContentsRedHighlight>개인정보 처리방침</ContentsRedHighlight>
+        </tbody>
       </PolicyWrap>
       <AppContentWrap>
-        <ContentsTitle>App</ContentsTitle>
-        <Contents>
-          <AndroidButton>
-            <FaGooglePlay /> 안드로이드
-          </AndroidButton>
-        </Contents>
-        <Contents>
-          <IosButton>
-            <FaApple /> iOS
-          </IosButton>
-        </Contents>
+        <tbody>
+          <ContentsTitle>App</ContentsTitle>
+          <Contents>
+            <AndroidButton>
+              <FaGooglePlay />
+              안드로이드
+            </AndroidButton>
+          </Contents>
+          <Contents>
+            <IosButton>
+              <FaApple />
+              iOS
+            </IosButton>
+          </Contents>
+        </tbody>
       </AppContentWrap>
       <CustomerWrapContents>
-        <ContentsTitle>고객지원</ContentsTitle>
-        <Timetable>평일 10:00 ~ 18:00 (12:00 ~14:00 제외)</Timetable>
-        <CustomerButton>스카이로켓에 문의</CustomerButton>
+        <tbody>
+          <ContentsTitle>고객지원</ContentsTitle>
+          <Timetable>평일 10:00 ~ 18:00 (12:00 ~ 14:00 제외)</Timetable>
+          <CustomerButton>스카이로켓에 문의</CustomerButton>
+        </tbody>
       </CustomerWrapContents>
     </ContentContainer>
   );
@@ -68,7 +80,6 @@ const ServiceGuideWrap = styled.table`
 const PolicyWrap = styled.table`
   width: 170px;
   height: 100%;
-
   border-spacing: 10px;
   border-collapse: separate;
 `;
@@ -88,7 +99,7 @@ const CustomerWrapContents = styled.table`
   border-collapse: separate;
 `;
 
-const ContentsTitle = styled.th`
+const ContentsTitle = styled.tr`
   display: flex;
   font-size: 16px;
   font-weight: bold;
@@ -121,7 +132,10 @@ const Timetable = styled.tr`
   color: #6d6d6d;
 `;
 
-const AndroidButton = styled.button`
+const AndroidButton = styled.th`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 140px;
   height: 36px;
   border-radius: 4px;
@@ -131,7 +145,10 @@ const AndroidButton = styled.button`
   color: #6d6d6d;
 `;
 
-const IosButton = styled.button`
+const IosButton = styled.th`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 140px;
   height: 36px;
   border-radius: 4px;
@@ -141,7 +158,10 @@ const IosButton = styled.button`
   color: #6d6d6d;
 `;
 
-const CustomerButton = styled.button`
+const CustomerButton = styled.tr`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 12px;
   width: 180px;
   height: 36px;
