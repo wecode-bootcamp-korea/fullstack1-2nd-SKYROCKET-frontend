@@ -37,4 +37,5 @@ export const projectApi = {
     }),
   category: () => api.get('/project/category'),
   status: () => api.get('/project/status'),
+  detail: id => api.get(`/project/detail/${id}`),
 };
