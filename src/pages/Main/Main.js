@@ -12,6 +12,8 @@ function Main() {
   );
 }
 
-const MainContainer = styled.div``;
+const MainContainer = styled.div`
+  padding-top: 85px;
+`;
 
 export default Main;
