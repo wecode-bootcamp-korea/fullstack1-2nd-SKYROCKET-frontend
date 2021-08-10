@@ -46,24 +46,27 @@ function FundingStatus({
           <StatusWrap>
             <StatusTitle>모인 금액</StatusTitle>
             <StatusValue>
-              {formatMoney(achievedAmount)}
+              {achievedAmount ? formatMoney(achievedAmount) : 0}
               <SmallUnits>원</SmallUnits>
               <FundingRate>
-                {getAchievedRate(achievedAmount, goalAmount)}%
+                {achievedAmount
+                  ? getAchievedRate(achievedAmount, goalAmount)
+                  : 0}
+                %
               </FundingRate>
             </StatusValue>
           </StatusWrap>
           <StatusWrap>
             <StatusTitle>남은 시간</StatusTitle>
             <StatusValue>
-              {getDaysBetweenDate(openDate, endDate)}
+              {openDate ? getDaysBetweenDate(openDate, endDate) : 0}
               <SmallUnits>일</SmallUnits>
             </StatusValue>
           </StatusWrap>
           <StatusWrap>
             <StatusTitle>후원자</StatusTitle>
             <StatusValue>
-              {totalBackers}
+              {totalBackers ? totalBackers : 0}
               <SmallUnits>명</SmallUnits>
             </StatusValue>
           </StatusWrap>
@@ -71,10 +74,11 @@ function FundingStatus({
         <Inpormation>
           <InpormationStatus>펀딩 진행중</InpormationStatus>
           <InpormationContents>
-            목표 금액인 <span>{formatMoney(goalAmount)}</span>원이 모여야만
-            결제됩니다.
+            목표 금액인 <span>{goalAmount ? formatMoney(goalAmount) : 0}</span>
+            원이 모여야만 결제됩니다.
             <br />
-            결제는 <span>{formatDate(paymentDate)}</span>에 다함께 진행됩니다.
+            결제는 <span>{paymentDate ? formatDate(paymentDate) : 0}</span>에
+            다함께 진행됩니다.
           </InpormationContents>
         </Inpormation>
         <ButtonWrap>
@@ -109,6 +113,7 @@ const FundingImg = styled.img`
   height: 100%;
   margin: 0px;
   padding: 0px;
+  object-fit: cover;
 `;
 
 const Introduction = styled.div`
