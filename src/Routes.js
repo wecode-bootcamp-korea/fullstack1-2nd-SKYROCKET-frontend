@@ -22,7 +22,7 @@ function Routes() {
       <Switch>
         <Route path="/" exact component={Main} />
         <Route path="/discover" exact component={List} />
-        <Route path="/project" exact component={Detail} />
+        <Route path="/project/:id" exact component={Detail} />
         <Route path="/signup" exact component={SignUp} />
         <Route path="/login" exact component={Login} />
         <Route path="/project-create" exact component={ProjectCreate} />

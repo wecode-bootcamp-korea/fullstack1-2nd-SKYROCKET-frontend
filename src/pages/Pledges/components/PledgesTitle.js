@@ -12,6 +12,7 @@ function PledgesTitle() {
 }
 
 const TitleContainer = styled.div`
+  padding-top: 55px;
   border-top: 1px solid ${({ theme }) => theme.colors.grey500};
   border-bottom: 1px solid ${({ theme }) => theme.colors.grey500};
 `;

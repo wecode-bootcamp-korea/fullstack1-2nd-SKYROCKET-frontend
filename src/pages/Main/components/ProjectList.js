@@ -2,21 +2,30 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Container from '../../../components/Container/Container';
 import ProjectCard from './ProjectCard';
+import { projectApi } from '../../../config';
 
 function ProjectList() {
-  const [productImageState, setProductImageState] = useState([]);
+  const [projectsData, setProjectsData] = useState([]);
+
+  const getProjectsData = async (offset, limit, category) => {
+    try {
+      const response = await projectApi.list(offset, limit, category);
+      console.log(response);
+      setProjectsData(response.data.projects);
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   useEffect(() => {
-    fetch('data/ProductCardData.json')
-      .then(res => res.json())
-      .then(data => setProductImageState(data.ProductCardData));
+    getProjectsData(0, 9, 1);
   }, []);
 
   return (
     <MainProjectContainer>
       <Title>Game</Title>
       <ProjectGrid>
-        {productImageState.map(item => {
+        {projectsData.map(item => {
           return <ProjectCard key={item.id} {...item} />;
         })}
       </ProjectGrid>

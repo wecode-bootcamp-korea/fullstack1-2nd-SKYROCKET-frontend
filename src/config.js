@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const SERVER = 'http://10.89.2.37:8000';
+export const SERVER = 'http://10.89.3.131:8000';
 
 export const KAKAO_LOGIN_API = `${SERVER}/kakao/login`;
 
@@ -23,4 +23,18 @@ export const userApi = {
       email,
       password,
     }),
+};
+
+export const projectApi = {
+  list: (offset, limit, category, status) =>
+    api.get('/project', {
+      params: {
+        offset,
+        limit,
+        category,
+        status,
+      },
+    }),
+  category: () => api.get('/project/category'),
+  status: () => api.get('/project/status'),
 };
