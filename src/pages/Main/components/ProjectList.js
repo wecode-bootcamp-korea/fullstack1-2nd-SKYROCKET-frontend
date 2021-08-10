@@ -10,7 +10,6 @@ function ProjectList() {
   const getProjectsData = async (offset, limit, category) => {
     try {
       const response = await projectApi.list(offset, limit, category);
-      console.log(response);
       setProjectsData(response.data.projects);
     } catch (error) {
       console.error(error);
