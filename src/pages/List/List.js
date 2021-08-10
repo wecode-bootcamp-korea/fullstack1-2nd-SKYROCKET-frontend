@@ -1,10 +1,19 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useEffect } from 'react';
+import ProjectList from './components/ProjectList';
+import useProjectsData from '../../hooks/useProjectsData';
 
 function List() {
-  return <Text>리스트 페이지입니다!</Text>;
-}
+  const { projectsData, getProjectsData } = useProjectsData();
 
-const Text = styled.p``;
+  useEffect(() => {
+    getProjectsData();
+  }, []);
+
+  return (
+    <>
+      <ProjectList projectsData={projectsData} />
+    </>
+  );
+}
 
 export default List;

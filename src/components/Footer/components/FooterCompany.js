@@ -41,7 +41,7 @@ function FooterCompany() {
         <Normal>01-7777-7777</Normal>
       </Address>
       <Address>
-        <Normal>© 2021 Tumblbug Inc.</Normal>
+        <Normal>© 2021 SKYROCKET Inc.</Normal>
       </Address>
     </Container>
   );

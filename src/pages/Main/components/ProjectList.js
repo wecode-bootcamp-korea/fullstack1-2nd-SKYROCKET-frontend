@@ -17,12 +17,12 @@ function ProjectList() {
   };
 
   useEffect(() => {
-    getProjectsData(0, 9, 1);
+    getProjectsData(0, 9, 2);
   }, []);
 
   return (
     <MainProjectContainer>
-      <Title>Game</Title>
+      <Title>Fashion</Title>
       <ProjectGrid>
         {projectsData.map(item => {
           return <ProjectCard key={item.id} {...item} />;
@@ -32,17 +32,21 @@ function ProjectList() {
   );
 }
 
-const MainProjectContainer = styled(Container)``;
+const MainProjectContainer = styled(Container)`
+  padding-bottom: 45px;
+`;
 
 const ProjectGrid = styled.div`
   display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   column-gap: 20px;
-  grid-template-columns: repeat(4, minmax(auto, auto));
 `;
 
 const Title = styled.div`
+  margin: 45px 0 20px 0;
+  color: ${({ theme }) => theme.colors.grey300};
   font-size: 28px;
-  margin: 20px 0 20px 0;
+  font-weight: 700;
 `;
 
 export default ProjectList;

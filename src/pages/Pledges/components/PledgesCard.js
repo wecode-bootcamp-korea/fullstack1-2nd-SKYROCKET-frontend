@@ -23,7 +23,7 @@ function PledgesCard({ img, number, name, date, option, money, title }) {
           </CardTitle>
           <CardOption>{option}</CardOption>
           <CardPrice>
-            <Price>{formatMoney(money)}</Price>을 후원하였습니다.
+            <Price>{formatMoney(money)}</Price>원을 후원하였습니다.
           </CardPrice>
         </CardContent>
       </CardContentWrap>
