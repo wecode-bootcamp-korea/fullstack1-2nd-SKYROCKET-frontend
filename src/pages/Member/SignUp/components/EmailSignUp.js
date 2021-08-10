@@ -1,15 +1,23 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+import useKakaoLogin from '../../../../hooks/useKakaoLogin';
+import useFormInput from '../../../../hooks/useFormInput';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 import SignUpOrSignIn from '../../components/SignUpOrSignIn';
 import OrDivider from '../../components/OrDivider';
 import { CHECKBOXES } from '../../data/checkBoxes';
+import { userApi } from '../../../../config';
 import { ReactComponent as LogoKakao } from '../../../../assets/LogoKakao.svg';
 
 function EmailSignUp({ title }) {
   const [isChecked, setIsChecked] = useState([false, false, false, false]);
+  const { handleKakaoLogin } = useKakaoLogin();
+  const [nickname, onChangeNickname] = useFormInput('');
+  const [email, onChangeEmail] = useFormInput('');
+  const [password, onChangePassword] = useFormInput('');
+  const history = useHistory();
 
   const handleSingleCheck = event => {
     const { checked, id } = event.target;
@@ -32,6 +40,17 @@ function EmailSignUp({ title }) {
       : setIsChecked([false, false, false, false]);
   };
 
+  const handleSignUp = async event => {
+    event.preventDefault();
+    try {
+      await userApi.signUp(nickname, email, password);
+      alert('SKYROCKET의 우주인이 되신 것을 환영합니다🥳');
+      history.push('/login');
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <>
       <h2>{title}</h2>
@@ -39,6 +58,7 @@ function EmailSignUp({ title }) {
         <InputGroup>
           <InputLabel htmlFor="name">이름</InputLabel>
           <Input
+            onChange={onChangeNickname}
             id="name"
             type="text"
             name="name"
@@ -48,6 +68,7 @@ function EmailSignUp({ title }) {
         <InputGroup>
           <InputLabel htmlFor="email">이메일 주소</InputLabel>
           <Input
+            onChange={onChangeEmail}
             id="email"
             type="text"
             name="email"
@@ -62,6 +83,7 @@ function EmailSignUp({ title }) {
         <InputGroup>
           <InputLabel htmlFor="password">비밀번호</InputLabel>
           <Input
+            onChange={onChangePassword}
             id="password"
             type="password"
             name="password"
@@ -101,14 +123,16 @@ function EmailSignUp({ title }) {
             </Agreement>
           ))}
         </AgreementGroup>
-        <Button primary>가입하기</Button>
+        <Button onClick={handleSignUp} primary>
+          가입하기
+        </Button>
       </Form>
       <SignUpOrSignIn login>
         <p>이미 SKYROCKET 계정이 있으신가요?</p>
         <Link to="/login">기존 계정으로 로그인하기</Link>
       </SignUpOrSignIn>
       <OrDivider />
-      <Button kakao>
+      <Button onClick={handleKakaoLogin} kakao>
         <LogoKakao />
         카카오로 시작하기
       </Button>

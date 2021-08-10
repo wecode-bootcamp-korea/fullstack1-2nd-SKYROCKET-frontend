@@ -2,16 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { HiOutlineMail } from 'react-icons/hi';
+import useKakaoLogin from '../../../../hooks/useKakaoLogin';
 import Button from '../../components/Button';
 import OrDivider from '../../components/OrDivider';
 import SignUpOrSignIn from '../../components/SignUpOrSignIn';
 import { ReactComponent as LogoKakao } from '../../../../assets/LogoKakao.svg';
 
 function KakaoSignUp({ title, toggleEmailSignUp }) {
+  const { handleKakaoLogin } = useKakaoLogin();
+
   return (
     <>
       <h2>{title}</h2>
-      <Button kakao>
+      <Button onClick={handleKakaoLogin} kakao>
         <LogoKakao />
         카카오로 시작하기
       </Button>
