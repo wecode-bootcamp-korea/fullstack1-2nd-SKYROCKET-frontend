@@ -6,40 +6,100 @@ function FooterContent() {
   return (
     <ContentContainer>
       <NoticeWrap>
-        <ContentsTitle>텀블벅</ContentsTitle>
-        <Contents>공지사항</Contents>
-        <Contents>채용</Contents>
-        <Contents>제휴협력</Contents>
+        <thead>
+          <tr>
+            <ContentsTitle>텀블벅</ContentsTitle>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <Contents>공지사항</Contents>
+          </tr>
+          <tr>
+            <Contents>채용</Contents>
+          </tr>
+          <tr>
+            <Contents>제휴협력</Contents>
+          </tr>
+        </tbody>
       </NoticeWrap>
       <ServiceGuideWrap>
-        <ContentsTitle>이용안내</ContentsTitle>
-        <Contents>헬프센터</Contents>
-        <ContentsHighlight>창작자 가이드</ContentsHighlight>
-        <Contents>프로젝트 심사 기준</Contents>
-        <Contents>수수료 정책</Contents>
+        <thead>
+          <tr>
+            <ContentsTitle>이용안내</ContentsTitle>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <Contents>헬프센터</Contents>
+          </tr>
+          <tr>
+            <ContentsHighlight>창작자 가이드</ContentsHighlight>
+          </tr>
+          <tr>
+            <Contents>프로젝트 심사 기준</Contents>
+          </tr>
+          <tr>
+            <Contents>수수료 정책</Contents>
+          </tr>
+        </tbody>
       </ServiceGuideWrap>
       <PolicyWrap>
-        <ContentsTitle>정책</ContentsTitle>
-        <Contents>이용약관</Contents>
-        <ContentsRedHighlight>개인정보 처리방침</ContentsRedHighlight>
+        <thead>
+          <tr>
+            <ContentsTitle>정책</ContentsTitle>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <Contents>이용약관</Contents>
+          </tr>
+          <tr>
+            <ContentsRedHighlight>개인정보 처리방침</ContentsRedHighlight>
+          </tr>
+        </tbody>
       </PolicyWrap>
       <AppContentWrap>
-        <ContentsTitle>App</ContentsTitle>
-        <Contents>
-          <AndroidButton>
-            <FaGooglePlay /> 안드로이드
-          </AndroidButton>
-        </Contents>
-        <Contents>
-          <IosButton>
-            <FaApple /> iOS
-          </IosButton>
-        </Contents>
+        <thead>
+          <tr>
+            <ContentsTitle>App</ContentsTitle>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <Contents />
+          </tr>
+          <tr>
+            <AndroidButton>
+              <FaGooglePlay />
+              안드로이드
+            </AndroidButton>
+          </tr>
+          <tr>
+            <Contents />
+          </tr>
+          <tr>
+            <IosButton>
+              <FaApple />
+              iOS
+            </IosButton>
+          </tr>
+        </tbody>
       </AppContentWrap>
       <CustomerWrapContents>
-        <ContentsTitle>고객지원</ContentsTitle>
-        <Timetable>평일 10:00 ~ 18:00 (12:00 ~14:00 제외)</Timetable>
-        <CustomerButton>스카이로켓에 문의</CustomerButton>
+        <thead>
+          <tr>
+            <ContentsTitle>고객지원</ContentsTitle>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <Timetable>평일 10:00 ~ 18:00 (12:00 ~ 14:00 제외)</Timetable>
+          </tr>
+          <tr>
+            <CustomerButton>스카이로켓에 문의</CustomerButton>
+          </tr>
+        </tbody>
       </CustomerWrapContents>
     </ContentContainer>
   );
@@ -68,7 +128,6 @@ const ServiceGuideWrap = styled.table`
 const PolicyWrap = styled.table`
   width: 170px;
   height: 100%;
-
   border-spacing: 10px;
   border-collapse: separate;
 `;
@@ -95,33 +154,36 @@ const ContentsTitle = styled.th`
   line-height: 24px;
 `;
 
-const Contents = styled.tr`
+const Contents = styled.td`
   font-size: 14px;
   font-weight: 500;
   line-height: 22px;
   color: #6d6d6d;
 `;
 
-const ContentsHighlight = styled.tr`
+const ContentsHighlight = styled.td`
   font-size: 14px;
   font-weight: bold;
   line-height: 22px;
   color: #f76453;
 `;
 
-const ContentsRedHighlight = styled.tr`
+const ContentsRedHighlight = styled.td`
   font-size: 14px;
   font-weight: bold;
   line-height: 22px;
   color: #939393;
 `;
 
-const Timetable = styled.tr`
+const Timetable = styled.td`
   font-size: 12px;
   color: #6d6d6d;
 `;
 
-const AndroidButton = styled.button`
+const AndroidButton = styled.td`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 140px;
   height: 36px;
   border-radius: 4px;
@@ -131,7 +193,10 @@ const AndroidButton = styled.button`
   color: #6d6d6d;
 `;
 
-const IosButton = styled.button`
+const IosButton = styled.td`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 140px;
   height: 36px;
   border-radius: 4px;
@@ -141,7 +206,10 @@ const IosButton = styled.button`
   color: #6d6d6d;
 `;
 
-const CustomerButton = styled.button`
+const CustomerButton = styled.td`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 12px;
   width: 180px;
   height: 36px;
