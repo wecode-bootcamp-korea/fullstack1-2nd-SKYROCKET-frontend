@@ -9,6 +9,12 @@
 
 <br />
 
+## 🎬 프로젝트 DEMO 영상
+
+[SKYROCKET Demo 영상](https://vimeo.com/585886529)
+
+<br />
+
 ## 💁‍♀️💁‍♂️ 팀원 구성
 
 - [감하영 (FE, BE)](https://github.com/iamhayoung)
