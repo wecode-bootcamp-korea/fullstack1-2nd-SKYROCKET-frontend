@@ -1,10 +1,14 @@
 # SKYROCKET Front-end 소개
 
-## 세상의 모든 펀딩이 SKYROCKET하는 날까지!
+### 세상의 모든 펀딩이 SKYROCKET하는 날까지!
 
-크라우드 펀딩 사이트 <a href="https://tumblbug.com/" target="_blank">tumblbug</a> 클론 프로젝트
+크라우드 펀딩 사이트 <a href="https://tumblbug.com/" target="_blank">tumblbug</a>을 모티브로 한 펀딩 사이트 개발 팀 프로젝트입니다.
 
-서비스명인 SKYROCKET은 `급등하다`라는 뜻을 가진 동사로, SKYROCKET 서비스와 팀원 개개인이 끊임없이 발전하기를 원하는 마음💖을 담았습니다.
+서비스명인 `SKYROCKET`은 `급등하다`라는 뜻을 가진 동사로,<br />
+`SKYROCKET` 서비스와 팀원 개개인이 끊임없이 발전하기를 원하는 마음💖을 담았습니다.
+
+<br />
+<br />
 
 ## 💁‍♀️💁‍♂️ 팀원 구성
 
@@ -12,9 +16,15 @@
 - [신수호 (FE)](https://github.com/realsuhoman)
 - [박미정 (BE)](https://github.com/undefinedP)
 
+<br />
+<br />
+
 ## 📆 프로젝트 기간
 
 2021.07.26 ~ 2021.8.10 (16일간)
+
+<br />
+<br />
 
 ## 🔑 Skills
 
@@ -44,16 +54,22 @@
 <img src="https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=ESLint&logoColor=white"/></a>
 <img src="https://img.shields.io/badge/Prettier-F7B93E?style=flat-square&logo=Prettier&logoColor=white"/></a>
 
-## 🛠 Tool
+- Tools
 
 <img src="https://img.shields.io/badge/Trello-0052CC?style=flat-square&logo=Trello&logoColor=white"/></a>
 <img src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=Slack&logoColor=white"/></a>
 <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/></a>
 <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=Postman&logoColor=white"/></a>
 
+<br />
+<br />
+
 ## Back-end Repository
 
 [SKYROCKET Back-end Repository Link](https://github.com/wecode-bootcamp-korea/fullstack1-2nd-SKYROCKET-backend)
+
+<br />
+<br />
 
 ## Front-end 구현 기능 상세
 
@@ -125,6 +141,9 @@
 
 - 레이아웃 구현
 - mock data를 활용하여 후원 현황 데이터를 출력
+
+<br />
+<br />
 
 ## ☕️ Reference
 
