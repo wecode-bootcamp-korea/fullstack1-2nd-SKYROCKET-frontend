@@ -8,7 +8,6 @@
 `SKYROCKET` 서비스와 팀원 개개인이 끊임없이 발전하기를 원하는 마음💖을 담았습니다.
 
 <br />
-<br />
 
 ## 💁‍♀️💁‍♂️ 팀원 구성
 
@@ -17,18 +16,16 @@
 - [박미정 (BE)](https://github.com/undefinedP)
 
 <br />
-<br />
 
 ## 📆 프로젝트 기간
 
 2021.07.26 ~ 2021.8.10 (16일간)
 
 <br />
-<br />
 
 ## 🔑 Skills
 
-- FrontEnd
+- **FrontEnd**
 
 <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black"/></a>
 <img src="https://img.shields.io/badge/React_Hooks-61DAFB?style=flat-square&logo=React&logoColor=black"/></a>
@@ -36,7 +33,7 @@
 <img src="https://img.shields.io/badge/styled--components-DB7093?style=flat-square&logo=StyledComponents&logoColor=white"/></a>
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/></a>
 
-- BackEnd
+- **BackEnd**
 
 <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white"/></a>
 <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=Express&logoColor=white"/></a>
@@ -48,13 +45,13 @@
 <img src="https://img.shields.io/badge/Jest-c21325?style=flat-square&logo=Jest&logoColor=white"/></a>
 <img src="https://img.shields.io/badge/Nodemon-76D04B?style=flat-square&logo=Nodemon&logoColor=white"/></a>
 
-- Common
+- **Common**
 
 <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white"/></a>
 <img src="https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=ESLint&logoColor=white"/></a>
 <img src="https://img.shields.io/badge/Prettier-F7B93E?style=flat-square&logo=Prettier&logoColor=white"/></a>
 
-- Tools
+- **Tools**
 
 <img src="https://img.shields.io/badge/Trello-0052CC?style=flat-square&logo=Trello&logoColor=white"/></a>
 <img src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=Slack&logoColor=white"/></a>
@@ -62,13 +59,11 @@
 <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=Postman&logoColor=white"/></a>
 
 <br />
-<br />
 
 ## Back-end Repository
 
 [SKYROCKET Back-end Repository Link](https://github.com/wecode-bootcamp-korea/fullstack1-2nd-SKYROCKET-backend)
 
-<br />
 <br />
 
 ## Front-end 구현 기능 상세
@@ -142,7 +137,6 @@
 - 레이아웃 구현
 - mock data를 활용하여 후원 현황 데이터를 출력
 
-<br />
 <br />
 
 ## ☕️ Reference
