@@ -20,16 +20,12 @@ function EmailSignUp({ title }) {
   const history = useHistory();
 
   const handleSingleCheck = event => {
-    const { checked, id } = event.target;
-    let statusUpdatedArray = [...isChecked];
+    const { id } = event.target;
+    const statusUpdatedArray = [...isChecked];
 
-    if (checked) {
-      statusUpdatedArray.splice(id - 1, 1, true);
-      setIsChecked(statusUpdatedArray);
-    } else {
-      statusUpdatedArray.splice(id - 1, 1, false);
-      setIsChecked(statusUpdatedArray);
-    }
+    statusUpdatedArray[id - 1] = !statusUpdatedArray[id - 1];
+
+    setIsChecked(statusUpdatedArray);
   };
 
   const handleAllCheck = event => {
